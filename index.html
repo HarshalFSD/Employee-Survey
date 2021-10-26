@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee-survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" align="center"> 
+        <header class="header">
+        <h1 id="title">Employee Interest Survey Form</h1>  
+          <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Enter Your Name:" required/>
+          </div><br>
+          <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Enter Email-Id:" required/>
+             </div><br>
+          <div class="form-group">
+            <label id="number-label" for="number">Age:</label>
+            <input id="number" type="number" name="number" min="18" max="55" placeholder="Age" required/> 
+          </div>
+          <div class="form-group">
+            <p>What geners movies do you like?</p>
+            <select id="dropdown" name="movie" required>
+              <option disabled selected value>Select movie type:</option>
+              <option value="horror">Horror</option>
+              <option value="romance">Romance</option>
+              <option value="comedy">Comedy</option>
+              <option value="action">Action</option>
+              <option value="biopic">Biopic</option>
+            </select>
+          </div><br>
+          <div class="form-group">
+            <p>Do you exersize at home?</p>
+            <label>
+              <input type="radio" name="name" value="yes"/>Yes
+            </label><br>
+            <label>
+              <input type="radio" name="name" value="No"/>No
+            </label><br>
+            <label>
+              <input type="radio" name="name" value="sometime"/>Sometimes
+            </label>
+          </div><br>
+          
+          <div class="form-group">
+            <p>How do you like to read about your favorite topics?</p>
+            <label>
+              <input class="input-checkbox" type="checkbox" name="check" value="Book"/>Books
+            </label><br>
+            <label>
+              <input class="input-checkbox" type="checkbox" name="check" value="online"/>Online_Resource
+            </label><br>
+            <label>
+              <input class="input-checkbox" type="checkbox" name="check" value="phone"/>Phone_app
+            </label><br>
+            <label>
+              <input class="input-checkbox" type="checkbox" name="check" value="magazine"/>Magazine
+            </label>
+          </div>
+          
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea class="input-textarea" id="comment" name="comment"  placeholder="Type here..."></textarea>
+          </div>
+          
+          <div class="form-group">
+            <button id="submit" type="submit" class="submit-button">Submit</button>
+          </div>
+        </form>
+        
+        
+       </div>
+</body>
+</html>
+
+  
